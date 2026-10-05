@@ -1,0 +1,292 @@
+.nav {
+  width: 100%;
+  height: 74px;
+  padding: 0 12px 0 165px;
+
+  display: flex;
+  align-items: center;
+
+  background: #000;
+  color: #fff;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.links {
+  margin-left: 165px;
+
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.links a {
+  position: relative;
+
+  color: #fff;
+  text-decoration: none;
+
+  /* font-family: Arial, sans-serif; */
+  font-size: 20px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #ff1616;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 165px;
+}
+
+/* =========================
+   LANGUAGE
+========================= */
+.language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language button {
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.language button img {
+  width: 32px;
+  height: 23px;
+
+  object-fit: cover;
+  border-radius: 4px;
+
+  transition: 0.2s ease;
+}
+
+.language button:hover img {
+  transform: scale(1.1);
+}
+
+
+.language:hover .languageDropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.languageDropdown img {
+  width: 32px;
+  height: 22px;
+
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* =========================
+   APPLY BUTTON
+========================= */
+
+.applyBtn {
+  height: 48px;
+  min-width: 185px;
+
+  padding: 0 18px 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  background: #ff1111;
+  color: #fff;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.applyBtn:hover {
+  background: #e00000;
+  transform: translateY(-1px);
+}
+
+.check {
+  width: 21px;
+  height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menuBtn {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 8px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.menuBtn span {
+  display: block;
+
+  width: 25px;
+  height: 2px;
+
+  margin: 5px 0;
+
+  background: #fff;
+}
+.language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.language button img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.language button:hover img {
+  transform: scale(1.08);
+}
+
+.language button img {
+  transition: transform 0.2s ease;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .nav {
+    padding-left: 50px;
+  }
+
+  .links {
+    margin-left: 70px;
+    gap: 25px;
+  }
+
+  .links a {
+    font-size: 17px;
+  }
+
+  .right {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    height: 70px;
+    padding: 0 30px;
+  }
+
+  .links,
+  .right {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+    margin-left: auto;
+  }
+
+  .logo img {
+    width: 125px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    padding: 0 20px;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+}

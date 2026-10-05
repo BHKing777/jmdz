@@ -1,0 +1,480 @@
+.footer {
+  width: 100%;
+  background: #f4f1e9;
+  color: #20221e;
+}
+
+.container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* =========================
+   CONTACTS
+========================= */
+
+.contacts {
+  padding: 120px 0 100px;
+}
+
+.badge,
+.feedbackBadge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 16px;
+
+  border: 1px solid #b9b8ae;
+  border-radius: 999px;
+
+  color: #686961;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.title {
+  max-width: 850px;
+
+  margin: 28px 0 25px;
+
+  font-size: clamp(48px, 7vw, 86px);
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+
+.description {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #686961;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================
+   CONTACT CARDS
+========================= */
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-top: 65px;
+}
+
+.contactCard {
+  position: relative;
+
+  min-height: 255px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #ebe8df;
+  border: 1px solid #dfdcd2;
+  border-radius: 20px;
+
+  color: #20221e;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-5px);
+  background: #e5e2d8;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.iconBox {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+}
+
+.icon {
+  display: block;
+
+  width: 56px;
+  height: 56px;
+
+  object-fit: contain;
+
+  filter: none;
+}
+
+
+.arrow {
+  font-size: 25px;
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.contactCard:hover .arrow {
+  transform: translate(4px, -4px);
+}
+
+.contactCard h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contactCard p {
+  margin: 0;
+
+  color: #686961;
+
+  font-size: 15px;
+}
+
+/* =========================
+   FEEDBACK
+========================= */
+
+.feedback {
+  padding: 90px 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  border-top: 1px solid #d9d6cc;
+  border-bottom: 1px solid #d9d6cc;
+}
+
+.feedbackContent {
+  max-width: 750px;
+}
+
+.feedbackContent h2 {
+  margin: 25px 0 0;
+
+  font-size: clamp(34px, 4.5vw, 58px);
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.feedbackButton {
+  min-width: 225px;
+
+  padding: 17px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  background: #20221e;
+  border-radius: 999px;
+
+  color: #f4f1e9;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.feedbackButton:hover {
+  transform: translateY(-3px);
+  background: #343630;
+}
+
+.buttonArrow {
+  font-size: 20px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+  padding: 60px 0 30px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.logoImage {
+  display: block;
+
+  width: 150px;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+}
+
+.navLink {
+  position: relative;
+
+  color: #45463f;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.navLink:hover {
+  color: #000;
+}
+
+.navLink::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 1px;
+
+  background: #20221e;
+
+  transition: width 0.25s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.line {
+  width: 100%;
+  height: 1px;
+
+  margin: 50px 0 25px;
+
+  background: #d1cec4;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.navBottom p {
+  margin: 0;
+
+  color: #85867e;
+
+  font-size: 13px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.socials a {
+  color: #85867e;
+
+  font-size: 13px;
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.socials a:hover {
+  color: #20221e;
+}
+
+/* =========================
+   RTL
+========================= */
+
+:global([dir="rtl"]) .feedbackButton {
+  direction: rtl;
+}
+
+:global([dir="rtl"]) .nav {
+  direction: rtl;
+}
+
+:global([dir="rtl"]) .arrow,
+:global([dir="rtl"]) .buttonArrow {
+  transform: scaleX(-1);
+}
+
+:global([dir="rtl"]) .contactCard:hover .arrow {
+  transform: scaleX(-1) translate(4px, -4px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .contacts {
+    padding: 90px 0 75px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactCard {
+    min-height: 210px;
+  }
+
+  .feedback {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 70px 0;
+  }
+
+  .feedbackButton {
+    width: 100%;
+  }
+
+  .navTop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+
+    gap: 20px 30px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .contacts {
+    padding: 70px 0 60px;
+  }
+
+  .title {
+    margin-top: 22px;
+
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .contactGrid {
+    margin-top: 45px;
+  }
+
+  .contactCard {
+    min-height: 190px;
+
+    padding: 24px;
+  }
+
+  .feedback {
+    padding: 60px 0;
+  }
+
+  .feedbackContent h2 {
+    font-size: 36px;
+  }
+
+  .navigation {
+    padding-top: 45px;
+  }
+
+  .nav {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .navBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+
+    gap: 15px 25px;
+  }
+}
+@media (max-width: 600px) {
+  .iconBox {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}

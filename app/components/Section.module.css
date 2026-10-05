@@ -1,0 +1,232 @@
+.section {
+  width: 100%;
+  padding: 45px 4%;
+  box-sizing: border-box;
+
+  background: #fff;
+}
+
+/* BLACK BOX */
+
+.box {
+  position: relative;
+
+  width: 100%;
+  max-width: 1650px;
+
+  margin: 0 auto;
+  padding: 38px 32px;
+
+  box-sizing: border-box;
+
+  background: #111;
+
+  border-radius: 55px;
+
+  overflow: hidden;
+}
+
+/* RED BADGE */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 14px;
+
+  background: #ff1111;
+  color: #fff;
+
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+/* TITLE */
+
+.title {
+  margin: 18px 0 20px;
+
+  color: #fff;
+
+  font-size: clamp(38px, 3.2vw, 54px);
+  line-height: 1.05;
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+/* CARDS WRAPPER */
+
+.wrap {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 26px;
+}
+
+/* CARD */
+
+.card {
+  min-height: 143px;
+
+  padding: 24px 22px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+
+  border-radius: 27px;
+}
+
+/* CARD TEXT */
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.card p {
+  margin: 0 0 15px;
+
+  color: #ff1111;
+
+  font-size: 20px;
+  line-height: 1.1;
+
+  font-weight: 400;
+}
+.image {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+.card h3 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: 48px;
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+/* ICON */
+
+.icon {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ff1111;
+
+  font-size: 65px;
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1200px) {
+  .box {
+    border-radius: 40px;
+    padding: 32px 25px;
+  }
+
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    min-height: 140px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+  .section {
+    padding: 25px 15px;
+  }
+
+  .box {
+    padding: 25px 18px;
+
+    border-radius: 30px;
+  }
+
+  .badge {
+    font-size: 15px;
+  }
+
+  .title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    font-size: 34px;
+  }
+
+  .wrap {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .card {
+    min-height: 125px;
+
+    padding: 20px;
+
+    border-radius: 22px;
+  }
+
+  .card p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .card h3 {
+    font-size: 42px;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+}

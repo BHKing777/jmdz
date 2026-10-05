@@ -1,0 +1,74 @@
+{
+    "nav": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "services": "Services",
+    "about": "About us",
+    "contacts": "Contacts",
+    "apply": "APPLY NOW"
+  },
+  "section": {
+    "badge": "Numbers",
+    "title": "We believe in numbers",
+  "products": "Products",
+  "years": "Years on the market",
+  "distributors": "Global distributors",
+  "clients": "Satisfied clients"
+},
+     "main": {
+    "subtitle": "Benefits",
+    "title": "Advantages of the Company",
+    "description": "We manufacture car batteries, wheels, and tires and are looking for distributors. Flexible terms, reliable delivery, and support.",
+    "benefits": {
+      "item1": {
+        "title": "Wide Range of Products",
+        "desc": "We offer a diverse selection of high-quality car batteries, durable wheels, and premium tires to suit all vehicle types."
+      },
+      "item2": {
+        "title": "Flexible Terms",
+        "desc": "Customized cooperation models and favorable payment conditions tailored to fit distributor needs."
+      },
+      "item3": {
+        "title": "Reliable Delivery",
+        "desc": "On-time logistics and secure shipping routes ensuring uninterrupted supplies to all your locations."
+      },
+      "item4": {
+        "title": "Full Partner Support",
+        "desc": "Comprehensive marketing materials, technical assistance, and dedicated account managers for every distributor."
+      },
+      "item5": {
+        "title": "Certified Quality",
+        "desc": "All products undergo rigorous testing and meet international standards for performance and safety."
+      },
+      "item6": {
+        "title": "Competitive Pricing",
+        "desc": "Direct manufacturer prices with attractive margins to help increase your business profitability."
+      }
+    }
+  },
+      "footer": {
+    "badge": "Contacts",
+    "title": "Let's stay connected",
+    "description": "It's never been easier to get in touch with Cervo Global. Call us, use our live chat widget or email and we'll get back to you as soon as possible.",
+
+    "email": "Email",
+    "phone": "Phone",
+    "socials": "Socials",
+
+    "feedback": {
+      "badge": "Feedback",
+      "title": "Leave your feedback or suggestion — we are always here to help!",
+      "button": "Feedback or suggestion"
+    },
+
+    "links": {
+      "dashboard": "Dashboard",
+      "products": "Products",
+      "services": "Services",
+      "about": "About us",
+      "contacts": "Contacts"
+    },
+
+    "copyright": "© 2025 Cervo Global. All rights reserved."
+  }
+}
